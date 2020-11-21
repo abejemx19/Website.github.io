@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+<style>
+
+
+body{
+  background: 12172b;
+}
+
+img {
+
+width: 116px;
+height: 116px;
+border-radius: 50%;
+
+}
+  
+
+
+</style>
+
+
+
+    <meta charset="UTF-8" />
+    <title>Travel Website</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    
+    <header>
+      <div>
+        <i class="fas fa-plane"></i>
+        <p>Travel</p>
+      </div>
+      <nav>
+        <ul>
+         <li><a href="index.html">Home</a></li>
+           <li><a href="about.html">Book Now</a></li>
+            <li><a href="travelpage.html">Travel</a></li>
+           <li><a href="contact.html">Contact</a></li>
+           <li><a href="ourteam.html">Our Team</a></li>
+        </ul>
+      </nav>
+    </header>
+   
+
+<h1 class = "headings"> Our Team</h1>
+<div class = "image-container"> 
+  <div class= "image" onclick="fetch_info(0)"><img src ="Image1.jpg"></div>
+   <div class= "image" onclick="fetch_info(1)"><img src ="Image2.jpg"></div>
+    <div class= "image" onclick="fetch_info(2)"><img src ="Image3.jpg"></div>
+     <div class= "image" onclick="fetch_info(3)"><img src ="Image4.jpg"></div>
+      <div class= "image" onclick="fetch_info(4)"><img src ="Image5.jpg"></div>
+    </div>
+
+    <div class = "info-container">
+      <img class = "profile" id = "profile" src = "Image1.jpg" />
+      <div class="info">
+        <h1 class = "name" id = "name"></h1>
+
+        <h3 class = "status" id = "status"> Accounts Head </h3>
+        <p class= "about" id ="about">
+          Dog 1 is .....................
+        </p>
+      </div>
+   
+
+<script>
+  
+function fetch_info (i){
+
+let profile = ["Image1.jpg","Image2.jpg","Image3.jpg","Image4.jpg","Image5.jpg" ]
+
+let name= ["Dog_1","Dog_2","Dog_3","Dog_4","Dog_5"]
+
+let status= ["Senior Head","Junior Head","Senior Developer","Junior Developer","CIO"]
+
+let about= ["is a skilled head whose experience stems from engaging in efficiently target future-proof testing procedures, as well as from progressively supplying client-centric mindshares.","is an experienced Junior Head who has collaboratively networked accurate growth strategies to help with the overall growth of the company and has successfully completely expedited alternative testing procedures.","Is a Senior Developer will completely develop client-oriented projects. Uniquely incentivize by a web-enabled internal or organic sources, he is truly an exceptional addition to this team.","Is a Junior Developer whose credibly parallel task high-quality system management skills have only helped his overall momentun in his growth prospects with this company. He is also compitent at distinctively transforming magnetic e-markets","is the CIO who has deeply eggaged in appropriately reintermediating distributed schemas and will definately globally iterate maintainable functionalities to maintain his status quo."]
+
+document.getElementById("profile").src = profile [i];
+document.getElementById("name").innerHTML = name [i];
+document.getElementById("status").innerHTML = status [i];
+document.getElementById("about").innerHTML = about [i];
+ 
+}
+
+
+
+</script>
+</div>
+
+
+
+
+
+
+
+</div>
+      
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
